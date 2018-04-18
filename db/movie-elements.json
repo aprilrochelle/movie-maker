@@ -1,0 +1,160 @@
+{
+  "movieElements": [
+    {
+      "id": "element1",
+      "categoryId": "category1",
+      "name": "Viola Davis",
+      "cost": 3500000
+    },
+    {
+      "id": "element2",
+      "categoryId": "category1",
+      "name": "Angela Bassett",
+      "cost": 2750000
+    },
+    {
+      "id": "element3",
+      "categoryId": "category1",
+      "name": "Denzel Washington",
+      "cost": 5250000
+    },
+    {
+      "id": "element4",
+      "categoryId": "category1",
+      "name": "Chadwick Boseman",
+      "cost": 4950000
+    },
+    {
+      "id": "element5",
+      "categoryId": "category1",
+      "name": "Meryl Streep",
+      "cost": 7690000
+    },
+    {
+      "id": "element6",
+      "categoryId": "category1",
+      "name": "Robert DeNiro",
+      "cost": 8910000
+    },
+    {
+      "id": "element7",
+      "categoryId": "category2",
+      "name": "Tony the Tiger + Bruno",
+      "cost": 19200
+    },
+    {
+      "id": "element8",
+      "categoryId": "category2",
+      "name": "Bullwinkle + Rocky",
+      "cost": 18900
+    },
+    {
+      "id": "element9",
+      "categoryId": "category2",
+      "name": "Llama Llama Red Pajama + Mama Llama",
+      "cost": 9900
+    },
+    {
+      "id": "element10",
+      "categoryId": "category2",
+      "name": "Cowardly Lion + Dorothy",
+      "cost": 12500
+    },
+    {
+      "id": "element11",
+      "categoryId": "category3",
+      "name": "Lighting Package",
+      "cost": 72000
+    },
+    {
+      "id": "element12",
+      "categoryId": "category3",
+      "name": "Atmospheric Package",
+      "cost": 28000
+    },
+    {
+      "id": "element13",
+      "categoryId": "category3",
+      "name": "Pyrotechnics",
+      "cost": 103000
+    },
+    {
+      "id": "element14",
+      "categoryId": "category3",
+      "name": "Props",
+      "cost": 196500
+    },
+    {
+      "id": "element15",
+      "categoryId": "category3",
+      "name": "Scenery",
+      "cost": 157200
+    },
+    {
+      "id": "element16",
+      "categoryId": "category3",
+      "name": "Prosthetic Makeup",
+      "cost": 87000
+    },
+    {
+      "id": "element17",
+      "categoryId": "category3",
+      "name": "Computer Generated Imagery",
+      "cost": 353000
+    },
+    {
+      "id": "element18",
+      "categoryId": "category4",
+      "name": "Maui, Hawaii",
+      "cost": 386000
+    },
+    {
+      "id": "element19",
+      "categoryId": "category4",
+      "name": "Barcelona, Spain",
+      "cost": 625500
+    },
+    {
+      "id": "element20",
+      "categoryId": "category4",
+      "name": "Atlanta, Georgia",
+      "cost": 125500
+    },
+    {
+      "id": "element21",
+      "categoryId": "category4",
+      "name": "San Jose del Cabo, Mexico",
+      "cost": 302500
+    },
+    {
+      "id": "element22",
+      "categoryId": "category4",
+      "name": "Rio de Janeiro, Brazil",
+      "cost": 389000
+    },
+    {
+      "id": "element23",
+      "categoryId": "category4",
+      "name": "Istanbul, Turkey",
+      "cost": 463000
+    },
+    {
+      "id": "element24",
+      "categoryId": "category4",
+      "name": "Tokyo, Japan",
+      "cost": 722000
+    },
+    {
+      "id": "element25",
+      "categoryId": "category4",
+      "name": "Monaco",
+      "cost": 2360000
+    },
+    {
+      "id": "element26",
+      "categoryId": "category4",
+      "name": "Bangkok, Thailand",
+      "cost": 240000
+    }
+  ]
+}
