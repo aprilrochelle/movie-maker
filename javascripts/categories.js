@@ -6,6 +6,4 @@ const callCategories = (successFunction, errorFunction) => {
   myRequest.send();
 };
 
-module.exports = {
-  callCategories,
-};
+module.exports = callCategories;
