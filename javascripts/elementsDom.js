@@ -7,12 +7,22 @@ let elements = [];
 const domString = (categoryList, elementList) => {
   let domString = '';
   categoryList.forEach((category) => {
-    domString += `<h2>${category.categoryName}</h2>`;
+    domString += `<div class="col-xs-8">`;
+    domString += `<h2 class="text-center">${category.categoryName}</h2>`;
+    domString += `<div class="row">`;
     elementList.forEach((element) => {
       if (category.id === element.categoryId) {
-        domString += `<h5>${element.name}</h5>`;
-      }
+        domString += `<div class="col-xs-2 col-xs-offset-1">`;
+        domString +=  `<div class="checkbox">`;
+        domString +=    `<label>`;
+        domString +=      `<input id="${element.id}" class="checkbox" type="checkbox" value="">${element.name}`;
+        domString +=    `</label>`;
+        domString +=  `</div>`;
+        domString += `</div>`;
+      };
     });
+    domString += `</div>`;
+    domString += `</div>`;
   });
   return domString;
 };
