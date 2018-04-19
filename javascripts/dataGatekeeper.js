@@ -1,14 +1,18 @@
 const callCategories = require('./categories');
 const callElements = require('./elements');
+const data = require('./data');
+const elementsDom = require('./elementsDom');
 
 const whenCategoriesLoad = function () {
   const categoryData = JSON.parse(this.responseText).categories;
-  console.log(categoryData);
+  data.setCategories(categoryData);
+  callElements(whenElementsLoad, ifLoadFails);
 };
 
 const whenElementsLoad = function () {
   const elementData = JSON.parse(this.responseText).movieElements;
-  console.log(elementData);
+  data.setElements(elementData);
+  elementsDom();
 };
 
 const ifLoadFails = function () {
@@ -17,7 +21,6 @@ const ifLoadFails = function () {
 
 const initializer = () => {
   callCategories(whenCategoriesLoad, ifLoadFails);
-  callElements(whenElementsLoad, ifLoadFails);
 };
 
 module.exports = {
