@@ -10,7 +10,7 @@ const domString = (categoryList, elementList) => {
   let domString = '';
   categoryList.forEach((category) => {
     domString += `<div class="container-fluid">`;
-    domString += `<div class="col-xs-8">`;
+    domString += `<div class="col-xs-12">`;
     domString += `<h2 class="text-center">${category.categoryName}</h2>`;
     domString += `<div class="row">`;
     elementList.forEach((element) => {

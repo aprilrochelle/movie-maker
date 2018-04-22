@@ -1,15 +1,19 @@
 const data = require('./data');
+const printSelectionsToDom = require('./printSelections');
 
 let allElements = [];
+const selections = [];
 
 const showSelections = (e) => {
   allElements = data.getElements();
-  const selectedElement = e.target.id;
+  const selectedElement = e.target;
   allElements.forEach((element) => {
-    if (element.id === selectedElement) {
-      console.log(element);
+    if (element.id === selectedElement.id && selections.indexOf(element) === -1) {
+      selections.push(element);
     };
   });
+  printSelectionsToDom.printSelections(selections);
+  printSelectionsToDom.getTotal(selections);
 };
 
 const checkEvents = () => {
