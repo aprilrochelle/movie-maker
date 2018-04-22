@@ -8,3 +8,11 @@ h1 {
   font-size: 36px;
   margin-top: 10px;
 }
+
+.green {
+  color: rgb(10, 255, 10);
+}
+
+.red {
+  color: red;
+}

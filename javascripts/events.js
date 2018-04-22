@@ -3,14 +3,10 @@ const printSelectionsToDom = require('./printSelections');
 
 let allElements = [];
 const selections = [];
-let budgetBoxValue = '';
 
-const getBudget = (e) => {
+const disableBudgetBox = (e) => {
   const budgetBox = e.target.parentNode.children[0].children[0];
   budgetBox.setAttribute('disabled', 'disabled');
-
-  budgetBoxValue = e.target.parentNode.children[0].children[0].value;
-  budgetBoxValue = budgetBoxValue * 1;
   checkEvents();
 };
 
@@ -36,11 +32,10 @@ const checkEvents = () => {
 
 const budgetEvents = () => {
   const budgetBtn = document.getElementById('set-budget');
-  budgetBtn.addEventListener('click', getBudget);
+  budgetBtn.addEventListener('click', disableBudgetBox);
 };
 
 module.exports = {
   checkEvents,
   budgetEvents,
-  budgetBoxValue,
 };
