@@ -9,7 +9,23 @@
     <title>Movie Maker</title>
   </head>
   <body>
-    <h1>Movie Maker</h1>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <h1>Movie Maker</h1>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <div class="navbar-form navbar-right">
+            <div class="form-group">
+              <input id="budget-amt" type="text" class="form-control" placeholder="Enter Budget">
+            </div>
+            <button id="set-budget" class="btn btn-default">Set Budget</button>
+          </div>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
     <div class="row">
       <div class="col-xs-8">
         <div id="elements-display"></div>

@@ -1,5 +1,5 @@
 const data = require('./data');
-const events = require('./events');
+// const events = require('./events');
 
 const elementDiv = document.getElementById('elements-display');
 
@@ -18,7 +18,7 @@ const domString = (categoryList, elementList) => {
         domString += `<div class="col-xs-3">`;
         domString +=  `<div class="checkbox">`;
         domString +=    `<label>`;
-        domString +=      `<input id="${element.id}" class="check" type="checkbox" value="">${element.name}`;
+        domString +=      `<input id="${element.id}" class="check" type="checkbox" value="" disabled>${element.name}`;
         domString +=    `</label>`;
         domString +=  `</div>`;
         domString +=  `</div>`;
@@ -35,7 +35,6 @@ const printElementsToDom = () => {
   categories = data.getCategories();
   elements = data.getElements();
   elementDiv.innerHTML = domString(categories, elements);
-  events.checkEvents();
 };
 
 module.exports = printElementsToDom;

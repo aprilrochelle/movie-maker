@@ -3,6 +3,16 @@ body {
   color: white;
 }
 
-/* .checkbox {
-  height: 75px;
-} */
+h1 {
+  line-height: 27px;
+  font-size: 36px;
+  margin-top: 10px;
+}
+
+.green {
+  color: rgb(10, 255, 10);
+}
+
+.red {
+  color: red;
+}

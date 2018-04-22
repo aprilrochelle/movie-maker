@@ -4,6 +4,12 @@ const printSelectionsToDom = require('./printSelections');
 let allElements = [];
 const selections = [];
 
+const disableBudgetBox = (e) => {
+  const budgetBox = e.target.parentNode.children[0].children[0];
+  budgetBox.setAttribute('disabled', 'disabled');
+  checkEvents();
+};
+
 const showSelections = (e) => {
   allElements = data.getElements();
   const selectedElement = e.target;
@@ -12,17 +18,24 @@ const showSelections = (e) => {
       selections.push(element);
     };
   });
+  data.setTotal(selections);
   printSelectionsToDom.printSelections(selections);
-  printSelectionsToDom.getTotal(selections);
 };
 
 const checkEvents = () => {
   const checkboxes = document.getElementsByClassName('check');
   for (let i = 0; i < checkboxes.length; i++) {
+    checkboxes[i].removeAttribute('disabled');
     checkboxes[i].addEventListener('click', showSelections);
   };
 };
 
+const budgetEvents = () => {
+  const budgetBtn = document.getElementById('set-budget');
+  budgetBtn.addEventListener('click', disableBudgetBox);
+};
+
 module.exports = {
   checkEvents,
+  budgetEvents,
 };

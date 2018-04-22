@@ -2,6 +2,7 @@ const callCategories = require('./categories');
 const callElements = require('./elements');
 const data = require('./data');
 const elementsDom = require('./elementsDom');
+const events = require('./events');
 
 const whenCategoriesLoad = function () {
   const categoryData = JSON.parse(this.responseText).categories;
@@ -21,6 +22,7 @@ const ifLoadFails = function () {
 
 const initializer = () => {
   callCategories(whenCategoriesLoad, ifLoadFails);
+  events.budgetEvents();
 };
 
 module.exports = {
