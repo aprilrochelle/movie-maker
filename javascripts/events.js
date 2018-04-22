@@ -6,13 +6,14 @@ const selections = [];
 
 const showSelections = (e) => {
   allElements = data.getElements();
-  const selectedElement = e.target.id;
+  const selectedElement = e.target;
   allElements.forEach((element) => {
-    if (element.id === selectedElement && selections.indexOf(element) === -1) {
+    if (element.id === selectedElement.id && selections.indexOf(element) === -1) {
       selections.push(element);
     };
   });
-  printSelectionsToDom(selections);
+  printSelectionsToDom.printSelections(selections);
+  printSelectionsToDom.getTotal(selections);
 };
 
 const checkEvents = () => {
