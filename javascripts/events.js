@@ -3,13 +3,15 @@ const printSelectionsToDom = require('./printSelections');
 
 let allElements = [];
 const selections = [];
-let budgetBox = '';
+let budgetBoxValue = '';
 
 const getBudget = (e) => {
-  budgetBox = e.target.parentNode.children[0].children[0].value;
-  budgetBox = budgetBox * 1;
+  const budgetBox = e.target.parentNode.children[0].children[0];
+  budgetBox.setAttribute('disabled', 'disabled');
+
+  budgetBoxValue = e.target.parentNode.children[0].children[0].value;
+  budgetBoxValue = budgetBoxValue * 1;
   checkEvents();
-  // checkBudget(budgetBox);
 };
 
 const showSelections = (e) => {
@@ -20,8 +22,8 @@ const showSelections = (e) => {
       selections.push(element);
     };
   });
+  data.setTotal(selections);
   printSelectionsToDom.printSelections(selections);
-  printSelectionsToDom.getTotal(selections);
 };
 
 const checkEvents = () => {
@@ -40,4 +42,5 @@ const budgetEvents = () => {
 module.exports = {
   checkEvents,
   budgetEvents,
+  budgetBoxValue,
 };

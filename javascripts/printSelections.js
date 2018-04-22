@@ -1,9 +1,13 @@
+const data = require('./data');
+
 const printSelections = (selections) => {
   const selectionsDiv = document.getElementById('selections-div');
   selectionsDiv.innerHTML = selectionDomString(selections);
+  printTotal();
 };
 
-const printTotal = (cost) => {
+const printTotal = () => {
+  const cost = data.getTotal();
   const selectionTotalDiv = document.getElementById('selection-total-div');
   selectionTotalDiv.innerHTML = selectionTotalString(cost);
 };
@@ -22,15 +26,6 @@ const selectionTotalString = (cost) => {
   return selectionTotal;
 };
 
-const getTotal = (selections) => {
-  let elementCost = 0;
-  selections.forEach((selection) => {
-    elementCost += selection.cost;
-  });
-  printTotal(elementCost);
-};
-
 module.exports = {
   printSelections,
-  getTotal,
 };
