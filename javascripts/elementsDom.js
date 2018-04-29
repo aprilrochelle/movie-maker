@@ -11,7 +11,7 @@ const domString = (categoryList, elementList) => {
   categoryList.forEach((category) => {
     domString += `<div class="container-fluid">`;
     domString += `<div class="col-xs-12">`;
-    domString += `<h2 class="text-center">${category.categoryName}</h2>`;
+    domString += `<h2 class="text-center heading">${category.categoryName}</h2>`;
     domString += `<div class="row">`;
     elementList.forEach((element) => {
       if (category.id === element.categoryId) {
