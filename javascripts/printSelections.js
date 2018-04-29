@@ -21,11 +21,11 @@ const printSelections = (selections) => {
 };
 
 const printApprovalMessage = () => {
-  approvalDiv.innerHTML = `<h2 class="green">You're ready to make the movie!</h2>`;
+  approvalDiv.innerHTML = `<h4 class="green">You're ready to make the movie!</h4>`;
 };
 
 const printAlertMessage = () => {
-  approvalDiv.innerHTML = `<h2 class="red">You're not ready to make this movie yet!</h2>`;
+  approvalDiv.innerHTML = `<h4 class="red">You're not ready to make this movie yet!</h4>`;
 };
 
 const selectionDomString = (selections) => {
@@ -48,7 +48,7 @@ const budgetComparisonString = (amount) => {
   } else {
     budgetDifference += `<h3 class="budget-difference red">$${amount}</h3>`;
   };
-  budgetDifference += `<h4>Remaining</h4>`;
+  budgetDifference += `<h4 class="budget-remaining">Remaining</h4>`;
   return budgetDifference;
 };
 
