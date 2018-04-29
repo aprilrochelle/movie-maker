@@ -22,11 +22,11 @@ const printSelections = (selections) => {
 };
 
 const printApprovalMessage = () => {
-  approvalDiv.innerHTML = `<h2>You're ready to make the movie!</h2>`;
+  approvalDiv.innerHTML = `<h2 class="green">You're ready to make the movie!</h2>`;
 };
 
 const printAlertMessage = () => {
-  approvalDiv.innerHTML = `<h2>You're not ready to make this movie yet!</h2>`;
+  approvalDiv.innerHTML = `<h2 class="red">You're not ready to make this movie yet!</h2>`;
 };
 
 const selectionDomString = (selections) => {
