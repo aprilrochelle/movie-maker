@@ -22,11 +22,23 @@ const showSelections = (e) => {
   printSelectionsToDom.printSelections(selections);
 };
 
+const removeFromSelections = (e) => {
+  const selectionToRemove = e.target.parentNode;
+  console.log('Remove this one: ', selectionToRemove);
+  // selections.splice(indexOf(selectionToRemove), 1);
+};
+
 const checkEvents = () => {
   const checkboxes = document.getElementsByClassName('check');
   for (let i = 0; i < checkboxes.length; i++) {
     checkboxes[i].removeAttribute('disabled');
-    checkboxes[i].addEventListener('click', showSelections);
+    checkboxes[i].addEventListener('change', function () {
+      if (this.checked) {
+        showSelections(event);
+      } else {
+        removeFromSelections(event);
+      };
+    });
   };
 };
 
