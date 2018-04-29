@@ -5,7 +5,6 @@ const printSelections = (selections) => {
   const selectionsDiv = document.getElementById('selections-div');
   selectionsDiv.innerHTML = selectionDomString(selections);
   const amountLeft = budget.compareToBudget(selections);
-  // const amountLeft = budget.costDifference();
   const uniqueCategories = [...new Set(selections.map(item => item.categoryId)),];
   if (uniqueCategories.length === 1) {
     printAlertMessage();

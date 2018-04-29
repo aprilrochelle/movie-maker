@@ -16,3 +16,19 @@ h1 {
 .red {
   color: red;
 }
+
+.percent25 {
+  width: 25%;
+}
+
+.percent50 {
+  width: 50%;
+}
+
+.percent75 {
+  width: 75%;
+}
+
+.percent100 {
+  width: 100%;
+}
