@@ -1,5 +1,5 @@
 body {
-  background: url('https://getreelcinemas.com//wp-content/uploads/2015/02/Background-Narrow.jpg');
+  background: url('http://www.blsi.com/images/Walker_Art_Ctr_bg2012cinema0709_008_LG.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-color: black;
@@ -17,7 +17,7 @@ body {
 }
 
 #elements-display {
-  background-color: rgb(0, 0, 0, .4);
+  background-color: rgb(0, 0, 0, .6);
 }
 
 .heading {
